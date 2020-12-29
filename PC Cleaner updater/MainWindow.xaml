@@ -1,0 +1,18 @@
+﻿<Window x:Class="PC_Cleaner_updater.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PC_Cleaner_updater"
+        mc:Ignorable="d"
+        Title="Updater" Height="450" Width="800" ResizeMode="NoResize" Icon="speed-up-my-pc.png" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFF2F2FF">
+        <Grid HorizontalAlignment="Center" Height="50" Margin="59,171,56.333,0" VerticalAlignment="Top" Width="678" Background="#FFF2F2FF">
+            <ProgressBar x:Name="prog_bar_down" Loaded="prog_bar_down_Loaded" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="664" ValueChanged="prog_bar_down_ValueChanged" Value="0" Minimum="0" Maximum="100" Margin="10,0,0,0"/>
+            <TextBlock x:Name="prog_bar_percent" HorizontalAlignment="Center" Margin="310.5,14" RenderTransformOrigin="0.471,0.848" VerticalAlignment="Center" FontSize="16" Width="43" />
+        </Grid>
+        <Label x:Name="download_install" Content="" HorizontalAlignment="Left" Margin="309,236,0,0" VerticalAlignment="Top" Width="196" Height="54" RenderTransformOrigin="0.441,0.335" FontSize="25"/>
+        <Button x:Name="down" Content="Update Now" Margin="362,309,0,0" VerticalAlignment="Top" Width="85" Click="down_Click" Cursor="Hand" HorizontalAlignment="Left"/>
+
+    </Grid>
+</Window>
