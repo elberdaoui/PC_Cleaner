@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PC Cleaner", "PC Cleaner.csproj", "{BB22DBD7-109B-4C0B-BA92-5B104CA12966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PC Cleaner updater", "..\PC Cleaner updater\PC Cleaner updater.csproj", "{24D8B726-C726-4B07-9CC9-82BA096D3EF0}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PC Cleaner Setup", "..\PC Cleaner Setup\PC Cleaner Setup.vdproj", "{0FC90CA4-E7BC-485F-8138-2E4F92DCF05F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB22DBD7-109B-4C0B-BA92-5B104CA12966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB22DBD7-109B-4C0B-BA92-5B104CA12966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB22DBD7-109B-4C0B-BA92-5B104CA12966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB22DBD7-109B-4C0B-BA92-5B104CA12966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24D8B726-C726-4B07-9CC9-82BA096D3EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24D8B726-C726-4B07-9CC9-82BA096D3EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24D8B726-C726-4B07-9CC9-82BA096D3EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24D8B726-C726-4B07-9CC9-82BA096D3EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FC90CA4-E7BC-485F-8138-2E4F92DCF05F}.Debug|Any CPU.ActiveCfg = Debug
+		{0FC90CA4-E7BC-485F-8138-2E4F92DCF05F}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BD15903-AF93-4335-9990-060E4B263FBC}
+	EndGlobalSection
+EndGlobal

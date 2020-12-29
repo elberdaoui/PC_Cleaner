@@ -1,0 +1,48 @@
+﻿<Window x:Class="PC_Cleaner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PC_Cleaner"
+        mc:Ignorable="d"
+        Title="PC-CLEANER" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="speed-up-my-pc.png">
+    <Grid Background="#FFD7D3D3" Margin="0,0,0.667,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="693*"/>
+            <ColumnDefinition Width="101*"/>
+        </Grid.ColumnDefinitions>
+        <Border x:Name="logo_border" BorderBrush="#FFE9E9F7" BorderThickness="1" HorizontalAlignment="Left" Height="422" VerticalAlignment="Top" Width="224" Background="#FFDEDEF7">
+            <Label x:Name="lbl_version" Content="v1.0.0" Margin="15.667,366.667,150.667,15.667"/>
+        </Border>
+        <Image x:Name="logo" HorizontalAlignment="Left" Height="46" Margin="19,19,0,0" VerticalAlignment="Top" Width="44" Source="speed-up-my-pc.png" Stretch="Fill" Cursor="No"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="66,19,0,0" TextWrapping="Wrap" Text="MASTER" VerticalAlignment="Top" Width="79" Background="{x:Null}" BorderBrush="#FFDEDEF7" FontSize="18"/>
+        <Button x:Name="btn_home" Content="VUE D'ENSEMBLE" Margin="1,91,469,0" VerticalAlignment="Top" Height="54" BorderBrush="#FFEEEEF7" Background="#FFEEEEF7" Cursor="Hand"/>
+        <Button x:Name="btn_analyse_menu" Content="ANALYSER" Margin="1,150,469,0" VerticalAlignment="Top" Height="54" Background="#FFEEEEF7" BorderBrush="#FFEEEEF7" Cursor="Hand" Click="btn_analyse_menu_Click"/>
+        <Button x:Name="btn_history" Content="HISTORIQUE" Margin="1,209,0,0" VerticalAlignment="Top" Width="223" Height="54" Background="#FFEEEEF7" BorderBrush="#FFEEEEF7" Cursor="Hand" HorizontalAlignment="Left"/>
+        <Button x:Name="btn_optins" Content="OPTIONS" HorizontalAlignment="Left" Margin="1,268,0,0" VerticalAlignment="Top" Width="223" Height="54" BorderBrush="#FFEEEEF7" Background="#FFEEEEF7" Cursor="Hand"/>
+        <Button Content="WEBSITE" HorizontalAlignment="Left" Margin="19,328,0,0" VerticalAlignment="Top" Width="183" Background="#FFEEEEF7" BorderBrush="#FFEEEEF7" Height="40" Click="Button_Click_2"/>
+        <Border BorderBrush="#FFF2F2FF" BorderThickness="1" HorizontalAlignment="Left" Height="177" Margin="224,0,0,0" VerticalAlignment="Top" Width="570" Background="#FFF2F2FF" Grid.ColumnSpan="2">
+            <Button x:Name="btn_analyse" Content="ANALYSER" Margin="387.667,82.667,30.667,68" BorderBrush="White" Background="#FFA7BAEF" Cursor="Hand" Click="Button_Click_1"/>
+        </Border>
+        <Label x:Name="frst_ttl" Content="Analyse du PC nécessaire" HorizontalAlignment="Left" Margin="337,26,0,0" VerticalAlignment="Top" Width="259" Height="39" FontSize="22"/>
+        <Label x:Name="lbl_ttl_clean" Content="Espace à nettoyer : " HorizontalAlignment="Left" Margin="337,87,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Black"/>
+        <Label x:Name="lbl_clean" Content="à determiner par analyse" HorizontalAlignment="Left" Margin="455,87,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_ttl_analyse" Content="Derniére analyse : " HorizontalAlignment="Left" Margin="337,118,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Black"/>
+        <Label x:Name="lbl_analyse" Content="jamais" HorizontalAlignment="Left" Margin="455,118,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_ttl_update" Content="Derniére MAJ : " HorizontalAlignment="Left" Margin="337,149,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Black"/>
+        <Label x:Name="lbl_update" Content="jamais" HorizontalAlignment="Left" Margin="455,149,0,0" VerticalAlignment="Top"/>
+        <Grid HorizontalAlignment="Left" Height="191" Margin="224,177,0,0" VerticalAlignment="Top" Width="570" Background="White" Grid.ColumnSpan="2">
+            <Button x:Name="btn_home_clean" Content="NETTOYER" BorderBrush="#FFA7BAEF" Background="#FFA7BAEF" Width="140" Height="140" Cursor="Hand" Margin="43,27,387,24" Click="btn_home_clean_Click"/>
+            <Button x:Name="btn_home_history" Content="HISTORIQUE" Margin="213,27,217,24" BorderBrush="#FFA7BAEF" Background="#FFA7BAEF" Width="140" Height="140" Click="History" Cursor="Hand"/>
+            <Button x:Name="btn_home_update" Content="METTRE A JOUR" Margin="393,27,37,24" BorderBrush="#FFA7BAEF" Background="#FFA7BAEF" Width="140" Height="140" Cursor="Hand" Click="btn_home_update_Click"/>
+        </Grid>
+
+        <Grid x:Name="prog_grid" Margin="348,88,107,309" Visibility="Hidden">
+            <ProgressBar x:Name="prog_bar" Loaded="prog_bar_Loaded" Value="0" Minimum="0" Maximum="100" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="238" ValueChanged="prog_bar_ValueChanged" />
+            <TextBlock x:Name="prog_percentage" Text="" HorizontalAlignment="Center" />
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="54" Margin="224,368,0,0" VerticalAlignment="Top" Width="570" Grid.ColumnSpan="2" Background="#FFE5E5E5">
+            <Label Content="This application for cleaning temporary files and folders and respect user's privacy " HorizontalAlignment="Left" Margin="0,0,0,-1" VerticalAlignment="Top" Height="55" Width="570"/>
+        </Grid>
+    </Grid>
+</Window>
